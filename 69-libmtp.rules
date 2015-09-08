@@ -1,0 +1,4 @@
+Unable to open ~/.mtpz-data for reading, MTPZ disabled.# UDEV-style hotplug map for libmtp
+# Put this file in /etc/udev/rules.d
+# ONEPLUS ONE
+ATTR{idVendor}=="05c6", ATTR{idProduct}=="6764", SYMLINK+="libmtp-%k", MODE="660", GROUP="audio", ENV{ID_MTP_DEVICE}="1", ENV{ID_MEDIA_PLAYER}="1"
